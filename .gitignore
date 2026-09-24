@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build / Rust
+target/
+**/target/
+dist/
+build/
+.next/
+out/
+
+# Soroban
+.soroban/
+*.wasm
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*secret*
+credentials.json
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs & coverage
+*.log
+npm-debug.log*
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
