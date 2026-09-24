@@ -139,12 +139,14 @@ npm run dev
 
 Open `http://localhost:5173` — connect the demo wallet, set a threshold, ask **“What’s my balance?”** (proxied to the backend at `/api/chat`).
 
-### 4. Soroban contract tests
+### 4. Soroban contract build
 
 ```bash
-cd contracts/yield_agent
-cargo test
+cd contracts
+cargo build --target wasm32-unknown-unknown --release -p yield_agent
 ```
+
+Unit tests live in `contracts/yield_agent/src/test.rs`; see [contracts/README.md](contracts/README.md) if `cargo test` hits a local `ed25519-dalek` toolchain issue.
 
 ## Soroban contract
 

@@ -3,9 +3,8 @@ members = ["yield_agent"]
 resolver = "2"
 
 [workspace.dependencies]
-soroban-sdk = "21.7.7"
+soroban-sdk = "22.0.7"
 
 [profile.release-with-logs]
 inherits = "release"
-debug-atomics = true
 debug = true

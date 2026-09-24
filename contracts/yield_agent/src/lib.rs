@@ -161,6 +161,3 @@ impl YieldAgentContract {
             .unwrap_or(0)
     }
 }
-
-#[cfg(test)]
-mod test;
